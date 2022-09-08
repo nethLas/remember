@@ -1,0 +1,40 @@
+// Externals
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@700&family=Thasadith:wght@700&family=Varela+Round&display=swap');
+
+
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/modals";
+@import "basics/animations";
+
+// Cmps
+@import "cmps/app-header";
+@import "cmps/hero-list";
+@import "cmps/hero-preview";
+
+
+// Pages
+
+@import "pages/hero-details";
+
+.main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .app-header {
+        
+        background-color: #e91e63;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    > footer {
+        background-color: #111;
+        color: white;
+    }
+}

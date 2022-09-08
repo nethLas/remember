@@ -1,22 +1,23 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/NavbarComp";
+import './assets/styles/global.scss'
+import AppHeader from "./components/AppHeader";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import "./App.css";
-import CreateStory from "./pages/CreateStory";
+import HeroDetails from "./pages/HeroDetails";
 
 function App() {
   return (
     <>
       <Router>
         <div className="container">
-          <Navbar />
+          <AppHeader />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/create-story" element={<CreateStory />} />
+            <Route exact path="/signup" element={<Signup />} />
+            <Route exact path="/:id" element={<HeroDetails />} />
+            <Route exact path="/" element={<Home />} />
           </Routes>
         </div>
       </Router>

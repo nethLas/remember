@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background: linear-gradient(to bottom, rgb(7, 18, 33), rgb(54, 77, 98));
+}
+
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.127);
+  border-radius: 5px;
+  color: whitesmoke;
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+ &:focus-within {
+  outline: none;
+ }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  * {
+    pointer-events: none;
+  }
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+}
+
+// MAC like scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(255, 255, 255, 0.2);
+  -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  -webkit-border-radius: 100px;
+}

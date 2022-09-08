@@ -1,0 +1,11 @@
+.hero-details {
+    gap: 20px;
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

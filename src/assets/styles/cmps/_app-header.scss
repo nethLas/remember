@@ -1,0 +1,29 @@
+.header-container {
+    padding: 0;
+    .header-logo {
+        font-family: 'Thasadith';
+        font-size: 2rem;
+        user-select: none;
+        cursor: pointer;
+        span {
+            font-weight: 800;
+        }
+    }
+    nav {
+        gap: 15px;
+        user-select: none;
+        .nav-link {
+            color: rgb(34, 31, 31);
+            padding-block: 1.5rem;
+            transition: box-shadow .5s;
+            &:hover {
+                color: whitesmoke;
+                box-shadow: inset 0 -72px rgb(110, 15, 0);
+            }
+            &.active {
+                box-shadow: inset 0 -72px rgb(67, 11, 3);
+                color: whitesmoke;
+              }
+        }
+    }
+}
