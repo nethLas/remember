@@ -10,15 +10,14 @@ export const firebaseService = {
     saveEntity,
     removeEntity,
 }
-// console.log('process.env.VITE_SOME_KEY', import.meta.env);
 
 const firebaseConfig = {
-  apiKey: "AIzaSyByrPGMc6ozfloBtCeqPDSTx_XsF9gDYoA",
-  authDomain: "rememberthem-5f0a2.firebaseapp.com",
-  projectId: "rememberthem-5f0a2",
-  storageBucket: "rememberthem-5f0a2.appspot.com",
-  messagingSenderId: "240323565408",
-  appId: "1:240323565408:web:6c49c2b47e0d5779b4f005"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
